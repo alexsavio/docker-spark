@@ -21,3 +21,9 @@
 # - SPARK_SHUFFLE_OPTS, to set config properties only for the external shuffle service (e.g. "-Dx=y")
 # - SPARK_DAEMON_JAVA_OPTS, to set config properties for all daemons (e.g. "-Dx=y")
 # - SPARK_DAEMON_CLASSPATH, to set the classpath for all daemons
+SPARK_MASTER=spark://spark-master:7077
+#Allocation Parameters
+SPARK_WORKER_CORES=1
+SPARK_WORKER_MEMORY=1G
+SPARK_DRIVER_MEMORY=128m
+SPARK_EXECUTOR_MEMORY=256m

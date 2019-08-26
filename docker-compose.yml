@@ -1,14 +1,23 @@
-version: '3'
+version: '3.1'
 
 services:
   master:
-    image: actionml/spark:latest
+    build:
+      context: .
+      args:
+        version: 2.4.3
+    container_name: spark-master
     command: master
     ports:
       - 8080:8080
+      - 7077:7077
 
-  worker:
-    image: actionml/spark:latest
+  worker1:
+    build:
+      context: .
+      args:
+        version: 2.4.3
+    container_name: spark-worker1
     command: worker spark://master:7077
     depends_on:
       - master
@@ -16,3 +25,4 @@ services:
       - 8081:8081
     environment:
       - SPARK_WORKER_MEMORY=1g
+
