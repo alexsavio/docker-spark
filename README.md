@@ -1,4 +1,4 @@
-[![Go to Docker Hub](https://img.shields.io/badge/Docker%20Hub-%E2%86%92-blue.svg)](https://hub.docker.com/r/actionml/spark/) [![](https://images.microbadger.com/badges/version/actionml/spark.svg)](https://microbadger.com/images/actionml/spark) [![](https://images.microbadger.com/badges/image/actionml/spark.svg)](https://microbadger.com/images/actionml/spark)
+[![Go to Docker Hub](https://img.shields.io/badge/Docker%20Hub-%E2%86%92-blue.svg)](https://hub.docker.com/r/alexsavio/spark/) [![](https://images.microbadger.com/badges/version/alexsavio/spark.svg)](https://microbadger.com/images/alexsavio/spark) [![](https://images.microbadger.com/badges/image/alexsavio/spark.svg)](https://microbadger.com/images/alexsavio/spark)
 
 # Apache Spark docker container image (Standalone mode)
 

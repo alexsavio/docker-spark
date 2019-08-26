@@ -3,6 +3,9 @@ FROM openjdk:8-alpine3.8
 
 ARG version
 ARG release
+LABEL com.alexsavio.spark.vendor=alexsav.io \
+      com.alexsavio.spark.version=$version \
+      com.alexsavio.spark.release=$release
 
 ENV SPARK_HOME=/spark \
     SPARK_PGP_KEYS="A864F0C3E5262F9A229B85D07B165D2A15E06093 3E1CBD0F0533D602E80C6E986B32946082667DC1 9555DAB91FFA8A15D0925B87B1A91F0000799F7E"
